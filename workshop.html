@@ -1,0 +1,26 @@
+<!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Hashicorp Workshops</title>
+        <link rel="icon" type="image/png" href="https://cdn.freebiesupply.com/logos/large/2x/hashicorp-logo-png-transparent.png">
+        <meta name="description" content="Hashicorp Workshop">
+        <meta name="author" content="Sean Carolan">
+        <link rel="stylesheet" href="css/lab-styles.css">
+        <script src="js/jquery.js" type="text/javascript"></script>
+        <script src="js/remark.js" type="text/javascript"></script>
+        <script src="js/link.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <content>
+            <script>
+                remark.macros.scale = function (percentage) {
+                    var url = this;
+                    return '<img src="' + url + '" style="width: ' + percentage + '" />';
+                };
+                var urlParams = new URLSearchParams(window.location.search);
+                var slideshow = remark.create({ratio: '4:3', highlightStyle: 'tomorrow-night-bright', highlightLines: 'true', sourceUrl: 'content/' + urlParams.get('content')});
+            </script>
+        </content>
+    </body>
+</html>
