@@ -90,67 +90,28 @@ This is meant as a high level overview.  For detailed descriptions or instructio
 * https://learn.hashicorp.com/vault/
 
 ---
-name: The-Old-Way
-The Traditional Security Model
+name: Vault-Overview-1
+Vault Overview
 -------------------------
-.center[![:scale 90%](../../../css/images/bodiam_castle.jpg)]
-.center[Also known as the "Castle and Moat" method.]
-
-???
-TODO: Put Stephen's talk track in here.
-
-Traditional security models were built upon the idea of perimeter based security.  There would be a firewall, and inside that firewall it was assumed one was safe.  Resources such as databases were mostly static.  As such rules were based upon IP address, credentials were baked into source code or kept in a static file on disk.
-
-* IP Address based rules
-* Hardcoded credentials with problems such as:
-  * Shared service accounts for apps and users
-  * Difficult to rotate, decommission, and determine who has access
-  * Revoking compromised credentials could break 
+.center[![:scale 100%](../../../css/images/vault-overview-1.png)]
 
 ---
-name: The-New-Way
-Modern Secrets Management
+name: Vault-Overview-2
+Vault Overview
 -------------------------
-.center[![:scale 90%](../../../css/images/nomadic_houses.jpg)]
-.center[No well defined permieter; security enforced by identity.]
-
-???
-These are Mongolian Yurts or "Ger" as they are called locally. Instead of a castle with walls and a drawbridge, a fixed fortress that has an inside and an outside, these people move from place to place, bringing their houses with them.
-
-And if you don't think the Nomadic way can be an effective security posture, think about this for a moment. The Mongol military tactics and organization enabled the Genghis Khan to conquer nearly all of continental Asia, the Middle East and parts of eastern Europe. Mongol warriors would typically bring three or four horses with them, so they could rotate through the horses and go farther. Mongol army units could move up to 100 miles a day, which was unheard of in the 13th century. They were faster, more adaptable, and more resilient than all their enemies.
+.center[![:scale 100%](../../../css/images/vault-overview-2.png)]
 
 ---
-name: Identity-Based-Security
-Identity Based Security
+name: Vault-Overview-3
+Vault Overview
 -------------------------
-.center[![:scale 100%](../../../css/images/identity-triangle.png)]
-.center[Identity Based Security in Low Trust Networks
-https://www.hashicorp.com/identity-based-security-and-low-trust-networks]
-
-???
-Vault was designed to address the security needs of modern applications.  It differs from the traditional approach by using:
-
-* Identity based rules allowing security to stretch across network perimeters
-* Dynamic, short lived credentials that are rotated frequently
-* Individual accounts to maintain provenance (tie action back to entity)
-* Easily invalidate credentials or entities
+.center[![:scale 100%](../../../css/images/vault-overview-3.png)]
 
 ---
-name: Secrets-Engines
-Multi-tool for Secrets Management
+name: Vault-Overview-4
+Vault Overview
 -------------------------
-.center[![:scale 85%](../../../css/images/vault-engines.png)]
-.center[Store and manage any type of secret with different engines
-https://www.hashicorp.com/identity-based-security-and-low-trust-networks]
-
----
-name: Vault-Reference-Architecture-1
-Vault Architecture - Internals
--------------------------
-.center[![:scale 100%](../../../css/images/vault_arch.png)]
-.center[HashiCorp Vault Internals Reference Architecture
-https://www.vaultproject.io/docs/internals/architecture.html
-]
+.center[![:scale 100%](../../../css/images/vault-overview-4.png)]
 
 ---
 name: Vault-Reference-Architecture-2
