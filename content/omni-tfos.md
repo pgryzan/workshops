@@ -81,6 +81,7 @@ Table of Contents
 4. Organizing Your Terraform Code
 5. Provision and Configure VMs
 6. Manage and Change Infrastructure State
+7. Working in Teams
 ]
 
 ???
@@ -705,8 +706,8 @@ Run the following commands to clone the training repository from GitHub. Run the
 Windows Workstation Commands
 ```powershell
 cd ~/Desktop
-git clone https://github.com/hashicorp/workshops
-cd workshops/aws
+git clone https://github.com/pgryzan/workshops
+cd workshops/terraform/aws
 code -r .
 ```
 
@@ -1943,6 +1944,39 @@ name: chapter-6-lab-answer
 .center[![:scale 100%](../../../css/images/lab6-answer.png)]
 
 It's important to understand how Terraform views code, state, and reality. If you're ever unsure about what will happen you can run **`terraform plan`** to find out.
+
+---
+name: Chapter-7
+class: center,middle
+.section[
+Chapter 7  
+Working in Teams
+]
+
+---
+name: chapter-7-working-in-teams-1
+Working in Teams
+-------------------------
+.center[![:scale 80%](../../../css/images/terraform-os-workflow.png)
+</br></br>
+Individual Workflow
+]
+
+---
+name: chapter-7-working-in-teams-2
+Working in Teams
+-------------------------
+Common Challenges
+* State files have sensitive information in them
+* Automating the build
+* Using Workspaces to break down complex environments
+* Module privacy
+
+---
+name: chapter-7-working-in-teams-3
+Working in Teams
+-------------------------
+.center[![:scale 80%](../../../css/images/terraform-team-workflow.png)]
 
 ---
 name: terraform-destroy-2
